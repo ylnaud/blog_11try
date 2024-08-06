@@ -1,0 +1,19 @@
+{
+  "name": "blog_11try",
+  "version": "1.0.0",
+  "description": "blog eleventy desde el movil ",
+  "main": "app.js",
+  "scripts": {
+    "install": "npm install @11ty/eleventy --save-dev",
+    "start": "npx @11ty/eleventy --serve --port=7777",
+    "clear": "rm -rf docs",
+    "deploy": "npx @11ty/eleventy --pathprefix=/",
+    "deploy-subdomain": "npx @11ty/eleventy --pathprefix=/blog_11try.github.io/"
+  },
+  "keywords": [
+    "termux",
+    "eleventy"
+  ],
+  "author": "duanly vega alderete <thyronemiguelvegasantana@gmail.com>",
+  "license": "MIT"
+}

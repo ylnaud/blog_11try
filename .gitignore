@@ -1,0 +1,17 @@
+# Desplegado
+.eleventycache/
+.eleventy.js/
+
+
+# Entornos virtuales
+.env*
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Archivos de caché de navegador
+.DS_Store
+
+# Archivos de configuración específicos del editor
+.vscode/
