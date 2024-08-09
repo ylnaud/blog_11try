@@ -1,9 +1,8 @@
 # Desplegado
 .eleventycache/
 .eleventy.js/
-node_modules/
-docs/
-
+/docs
+/node_modules
 
 # Entornos virtuales
 .env*
