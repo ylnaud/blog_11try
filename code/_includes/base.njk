@@ -9,9 +9,10 @@
     <meta name="description" content="{{ descripcion }}">
    
 <!-- Centered viewport -->
+<!-- Centered viewport -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
 >
    
       
@@ -19,7 +20,7 @@
   <body>
    
     {% include "nav.njk" %}
-    <main class="container">
+    <main>
       {{ content | safe }}
     </main>
     {% include "footer.njk" %}
