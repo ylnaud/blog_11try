@@ -10,14 +10,16 @@
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
 >
   </head>
-  <body>   
-      │<header>
-    ▎ │ │{% include "nav.njk" %}
-    ▎ │</header>
-    ▎ │<main class="container">
-      │ {{ content | safe }}
-      │</main
+  <body>
+   <article>
+       <header>
+  {% include "nav.njk" %}
+   </header>
+  <main class="container">
+       {{ content | safe }}
+       </main
         {% include "footer.njk" %}
+   </article>   
     <script type="module" src="{{ '/js/index.js' | url }}"></script>
   </body>
 </html>
