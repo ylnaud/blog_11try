@@ -1,0 +1,37 @@
+---
+layout: base.njk
+title: "Contacto"
+description: "Cómo puedes ponerte en contacto conmigo."
+---
+
+<h1>{{title}}</h1>
+
+<p>Me encantaría saber de ti. Puedes ponerte en contacto conmigo a través de los siguientes canales:</p>
+
+ <h2>Formas de contacto</h2>
+
+  <form>
+       <fieldset>
+         <label>
+           First name
+           <input
+             name="first_name"
+             placeholder="First name"
+             autocomplete="given-name"/>
+         </label>
+         <label>
+           Email
+           <input
+             type="email"
+             name="email"
+             placeholder="Email"
+              autocomplete="email"
+            />
+          </label>
+        </fieldset>
+
+        <input
+          type="submit"
+          value="Subscribe"
+        />
+     </form>
