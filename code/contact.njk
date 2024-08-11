@@ -3,7 +3,11 @@ layout: base.njk
 title: "Contacto"
 description: contacto
 ---
-<form method="POST" netlify>
+<for
+ method="POST
+ netlify
+ data-netlify-recaptcha="true"
+  data-netlify="true>
   <fieldset>
     <label>
       First name
@@ -30,6 +34,15 @@ description: contacto
   aria-label="Professional short bio"
 >
 </textarea>
+<label>
+  <input type="checkbox" name="valid" aria-invalid="false" />
+  Valid
+</label>
+
+<label>
+  <input type="checkbox" data-netlify-recaptcha="true" name="invalid" aria-invalid="true" />
+  Invalid
+</label>
   </fieldset>
   <input type="submit" value="Subscribe" />
 </form>
