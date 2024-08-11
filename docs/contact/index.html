@@ -26,38 +26,30 @@
 
    </header>
   <main class="container">
-       
-<h1>Contacto</h1>
-
-<p>Me encantaría saber de ti. Puedes ponerte en contacto conmigo a través de los siguientes canales:</p>
-
- <h2>Formas de contacto</h2>
-
-  <form>
-       <fieldset>
-         <label>
-           First name
-           <input
-             name="first_name"
-             placeholder="First name"
-             autocomplete="given-name"/>
-         </label>
-         <label>
-           Email
-           <input
-             type="email"
-             name="email"
-             placeholder="Email"
-              autocomplete="email"
-            />
-          </label>
-        </fieldset>
-
-        <input
-          type="submit"
-          value="Subscribe"
-        />
-     </form>
+       <form method="POST" data-netlify="true">
+  <fieldset>
+    <label>
+      First name
+      <input
+        name="first_name"
+        placeholder="First name"
+        autocomplete="given-name"
+        required
+      />
+    </label>
+    <label>
+      Email
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        autocomplete="email"
+        required
+      />
+    </label>
+  </fieldset>
+  <input type="submit" value="Subscribe" />
+</form>
 
        </main
         <footer>
@@ -67,6 +59,6 @@
 </footer>
 
    </article>   
-    <script type="module" src="/js/index.js"></script>
+    <script type="module" src="/js/app.js"></script>
   </body>
 </html>
