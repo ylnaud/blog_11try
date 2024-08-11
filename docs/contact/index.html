@@ -28,53 +28,29 @@
   <main class="container">
        
 <form
+  name="contact"
   method="POST"
-  netlify
   data-netlify-recaptcha="true"
   data-netlify="true"
 >
-  <fieldset>
+  
     <label>
-      First name
-      <input
-        name="first_name"
-        placeholder="First name"
-        autocomplete="given-name"
-        required
-      />
+      Email: <input type="text" name="name" />
     </label>
+
     <label>
-      Email
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        autocomplete="email"
-        required
-      />
+      Message: <textarea name="message"></textarea>
     </label>
-    <label>
-      Bio
-      <textarea
-        name="bio"
-        placeholder="Write a professional short bio..."
-        aria-label="Professional short bio"
-        required
-      ></textarea>
-    </label>
-    <label>
-      <input
-        type="checkbox"
-        data-netlify-recaptcha="true"
-        name="valid"
-        required
-      />
-      Valid
-    </label>
-  </fieldset>
-  <input type="hidden" name="form-name" value="contact" />
-  <input type="submit" value="Subscribe" />
+  
+  <label>
+  <input type="checkbox" name="valid" aria-invalid="true" data-netlify-recaptcha="true" />
+  Valid
+</label>
+  
+    <button type="submit">Send</button>
+  
 </form>
+
 
        </main
         <footer>
