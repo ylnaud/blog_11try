@@ -26,11 +26,13 @@
 
    </header>
   <main class="container">
-       <for
- method="POST
- netlify
- data-netlify-recaptcha="true"
-  data-netlify="true>
+       
+<form 
+  method="POST" 
+  netlify 
+  data-netlify-recaptcha="true"
+  data-netlify="true"
+>
   <fieldset>
     <label>
       First name
@@ -51,17 +53,26 @@
         required
       />
     </label>
-    <textarea
-  name="bio"
-  placeholder="Write a professional short bio..."
-  aria-label="Professional short bio"
->
-</textarea>
-<label>
-  <input type="checkbox" data-netlify-recaptcha="true" name="valid" aria-invalid="false" />
-  Valid
-</label>
+    <label>
+      Bio
+      <textarea
+        name="bio"
+        placeholder="Write a professional short bio..."
+        aria-label="Professional short bio"
+        required
+      ></textarea>
+    </label>
+    <label>
+      <input 
+        type="checkbox" 
+        data-netlify-recaptcha="true" 
+        name="valid" 
+        required
+      />
+      Valid
+    </label>
   </fieldset>
+  <input type="hidden" name="form-name" value="contact" />
   <input type="submit" value="Subscribe" />
 </form>
 
