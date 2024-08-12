@@ -31,14 +31,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       return;
     }
 
-    // Verificación de reCAPTCHA
-    const recaptchaElement = myForm.querySelector('[data-netlify-recaptcha]');
-    if (!recaptchaElement || !recaptchaElement.querySelector('iframe')) {
-      alert("Please complete the reCAPTCHA.");
-      return;
-    }
-
-    // Si todo es válido, enviar el formulario
+    // Enviar formulario si las validaciones son correctas
     const formData = new FormData(myForm);
 
     fetch("/", {
