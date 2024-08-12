@@ -4,27 +4,21 @@ title: "Contacto"
 description: contacto
 ---
 
-<form
-  name="contact"
-  method="POST"
-  data-netlify-recaptcha="true"
-  data-netlify="true"
->
-  
-    <label>
-      Email: <input type="text" name="name" />
-    </label>
-
-    <label>
-      Message: <textarea name="message"></textarea>
-    </label>
-  
-  <label>
-  <input type="checkbox" name="valid" aria-invalid="true" data-netlify-recaptcha="true" />
-  Valid
-</label>
-  
-    <button type="submit">Send</button>
-  
+<form name="dva-form" method="POST" netlify data-netlify-recaptcha="true"> 
+    <input type="hidden" name="form-name" value="dva-form" />
+    <fieldset> 
+        <label>First name
+            <input name="first_name" placeholder="First name" autocomplete="given-name" required />
+        </label>
+        <label>Email
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required /> 
+        </label>
+        <label>Message
+            <textarea name="message" placeholder="Your message" maxlength="250" required></textarea>
+        </label>
+        <div data-netlify-recaptcha="true"></div>
+        <input type="checkbox" id="swahili" name="swahili" />
+    </fieldset> 
+    <input type="submit" value="Subscribe" /> 
 </form>
 
