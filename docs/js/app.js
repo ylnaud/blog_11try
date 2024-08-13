@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const messagePattern = /^.{1,250}$/;
 
-    const name = myForm.querySelector('input[name="first_name"]').value;
+    const name = myForm.querySelector('input[name="name"]').value;
     const email = myForm.querySelector('input[name="email"]').value;
     const message = myForm.querySelector('textarea[name="message"]').value;
 
