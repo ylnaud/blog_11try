@@ -4,17 +4,17 @@ title: "Contacto"
 description: contacto
 ---
 
-<form name="form" method="POST" netlify data-netlify-recaptcha="true"> 
-    <input type="hidden" name="form-name" value="form" />
+<form name="contacto" method="POST" netlify data-netlify-recaptcha="true"> 
+    <input type="hidden" name="form-name" value="contacto" />
     <fieldset> 
         <label>First name
-            <input name="first_name" placeholder="First name" autocomplete="given-name" required />
+            <input name="name" placeholder="Escribe tu nombre" autocomplete="given-name" required />
         </label>
         <label>Email
-            <input type="email" name="email" placeholder="Email" autocomplete="email" required /> 
+            <input type="email" name="email" placeholder="Escribe tu email" autocomplete="email" required /> 
         </label>
         <label>Message
-            <textarea name="message" placeholder="Your message" maxlength="250" required></textarea>
+            <textarea name="message" placeholder="Escribe tu comentario" maxlength="250" required></textarea>
         </label>
         <div data-netlify-recaptcha="true"></div>
     </fieldset> 
