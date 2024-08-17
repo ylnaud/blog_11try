@@ -3,7 +3,6 @@ layout: base.njk
 title: "📚💻 Bienvenido a mi rincón digital"
 description: "Explorando el conocimiento, compartiendo ideas y proyectos."
 ---
-
 # {{title}}
 
 
@@ -21,10 +20,22 @@ Soy Duanly Vega Alderete, apasionado por la tecnología, el desarrollo web, y la
 
 ## Últimos Artículos
 
-Aquí puedes listar algunos de tus últimos artículos si los tienes:
+Aquí puedes listar algunos de tus últimos artículos del blog si los tienes:
 
-- [Artículo 1: Título del Artículo](./articulos/articulo1/)
-- [Artículo 2: Título del Artículo](./articulos/articulo2/)
-- [Artículo 3: Título del Artículo](./articulos/articulo3/)
+
+<aside>
+    <h3>Blog</h3>
+    <ul>
+      {% for article in collections.blog |reverse %}
+        <li>
+          <a href="{{article.url}}">
+            {{ article.data.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+Cuando se genere el sitio, en lugar de tener URLs como `/articulo1/`, tendrás URLs más descriptivas y amigables para los usuarios y motores de búsqueda.
 
 Siéntete libre de explorar el contenido y de dejar tus comentarios o preguntas. ¡Espero que disfrutes tu estancia!

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Nunjucks (njk)</title>
+    <meta name="description" content="">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+>
+  </head>
+  <body>
+   <article>
+       <header>
+  <nav class="container">
+  <ul>
+  <li><strong><a href="/">Duanly Corps</a></strong></li>
+  </ul>
+  <ul>
+    <li><a href="/about" class="contrast">Acerca de mi</a></li>
+    <li><a href="/blog" class="contrast">Blog</a></li>
+    <li><a href="/contact" class="contrast">Contacto</a></li>
+  </ul>
+</nav>
+
+   </header>
+  <main class="container">
+       <h1>Introducción a Nunjucks (njk)</h1>
+<h2>¿Qué es Nunjucks?</h2>
+<p>Nunjucks es un motor de plantillas flexible y poderoso desarrollado por Mozilla. Es similar a otros motores de plantillas como Jinja2 (Python) y Twig (PHP), y es compatible con el navegador y Node.js. Se utiliza ampliamente en el desarrollo web para generar contenido HTML dinámico, reutilizable y mantenible.</p>
+<h2>Características principales</h2>
+<ol>
+<li><strong>Sintaxis sencilla y expresiva</strong>: Nunjucks utiliza una sintaxis que es fácil de leer y escribir, permitiendo una mayor productividad.</li>
+<li><strong>Herencia de plantillas</strong>: Puedes crear una estructura base y extenderla en múltiples plantillas, reduciendo la duplicación de código.</li>
+<li><strong>Filtros y macros</strong>: Nunjucks ofrece filtros y macros que permiten manipular datos y reutilizar fragmentos de código de manera eficiente.</li>
+<li><strong>Compatibilidad</strong>: Funciona tanto en el lado del cliente como en el lado del servidor, lo que lo hace muy versátil.</li>
+</ol>
+<h2>Configuración básica en Eleventy</h2>
+<p>Para utilizar Nunjucks con Eleventy, necesitas configurar tu entorno. Eleventy lo soporta de manera nativa, por lo que solo tienes que asegurarte de que los archivos <code>.njk</code> estén configurados correctamente.</p>
+<h3>Ejemplo de configuración:</h3>
+<pre><code class="language-javascript">// .eleventy.js
+module.exports = function(eleventyConfig) {
+  return {
+    dir: {
+      input: &quot;src&quot;,
+      includes: &quot;_includes&quot;,
+      data: &quot;_data&quot;,
+      output: &quot;dist&quot;
+    },
+    markdownTemplateEngine: &quot;njk&quot;,
+    htmlTemplateEngine: &quot;njk&quot;,
+    templateFormats: [&quot;njk&quot;, &quot;md&quot;, &quot;html&quot;]
+  };
+};
+</code></pre>
+
+       </main
+        <footer>
+    <p>Síguenos en:</p>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <p>© Duanly Vega Alderete 2024</p>
+</footer>
+
+   </article>   
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>
