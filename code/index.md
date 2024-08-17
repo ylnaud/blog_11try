@@ -16,4 +16,5 @@ Soy Duanly Vega Alderete, apasionado por la tecnología, el desarrollo web, y la
 - **[Sobre mí](./about/)**: Aprende más sobre quién soy y qué hago.
 - **Artículos**: Lee sobre temas que me interesan, desde guías de programación hasta reflexiones sobre tecnología.
 - **Proyectos**: Descubre los proyectos en los que estoy trabajando o que he completado recientemente.
-- **Recursos**: Encuentra herramientas y recursos útiles que utilizo en mi día a día.  
+- **Recursos**: Encuentra herramientas y recursos útiles que utilizo en mi día a día. 
+
