@@ -1,9 +1,9 @@
 ---
-layout: base.njk
+layout: /layouts/base.njk
 title: Introducción a JavaScript y Node.js
 description: Una guía introductoria al lenguaje de programación JavaScript y su uso en Node.js, cubriendo conceptos básicos y aplicaciones fundamentales.
 date: 2024-10-17
-tags: ["blog","node.js"]
+tags: ["blog", "node.js"]
 ---
 
 # {{title}}
@@ -41,14 +41,15 @@ Node.js es un entorno de ejecución para JavaScript que permite ejecutar código
 Aquí tienes un ejemplo de un servidor HTTP básico creado con Node.js:
 
 ```javascript
-const http = require('http');
+const http = require("http");
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('¡Hola, Mundo desde Node.js!\n');
+  res.setHeader("Content-Type", "text/plain");
+  res.end("¡Hola, Mundo desde Node.js!\n");
 });
 
-server.listen(3000, '127.0.0.1', () => {
-  console.log('Servidor ejecutándose en http://127.0.0.1:3000/');
+server.listen(3000, "127.0.0.1", () => {
+  console.log("Servidor ejecutándose en http://127.0.0.1:3000/");
 });
+```

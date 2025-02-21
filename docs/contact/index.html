@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8">
@@ -6,15 +6,12 @@
     <title>📬 ¡Déjame un Mensaje!</title>
     <link rel="icon" href="/img/logo.png">
     <meta name="description" content="">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-   <article>
-       <header>
-  <nav class="container">
+    <article>
+      <header><nav class="container">
   <ul>
   <li><strong><a href="/">Duanly Corps</a></strong></li>
   </ul>
@@ -24,45 +21,35 @@
     <li><a href="/contact" class="contrast">Contacto</a></li>
   </ul>
 </nav>
-
-   </header>
-  <main class="container">
-       <h1>📬 ¡Déjame un Mensaje!</h1>
-
+</header>
+      <main class="container">
+<h1>📬 ¡Déjame un Mensaje!</h1>
 <p>¿Te gustó lo que leíste? ¿Tienes alguna duda o simplemente quieres decir "¡Hola!"? 🤔</p>
-
 <p>No seas tímido, deja tu comentario abajo ⬇️. No te preocupes, ¡prometo no morder! 🐶 (Solo muerdo el código 🧑‍💻).</p>
-
 <p>Si te sientes muy inspirado, puedes mandarme una paloma mensajera... pero un comentario aquí abajo sería más rápido. 😉</p>
-
-<p>Así que, ¿qué esperas? ¡Escribe algo genial y hagamos que esta conversación sea tan divertida como un <code>console.log("Hola, Mundo!");</code>! 😄</p>
-<form name="contacto" method="POST" netlify data-netlify-recaptcha="true"> 
-    <input type="hidden" name="form-name" value="contacto" />
-    <fieldset> 
-        <label>First name
-            <input name="name" placeholder="Escribe tu nombre" autocomplete="given-name" required />
-        </label>
-      <label>Email
-            <input type="email" name="email" placeholder="Escribe tu email" autocomplete="email" required /> 
-        </label>
-        <label>Message
-            <textarea name="message" placeholder="Escribe tu comentario" maxlength="250" required></textarea>
-        </label>
-        <div data-netlify-recaptcha="true"></div>
-    </fieldset> 
-    <input type="submit" value="Enviar" /> 
-</form>
-
-
-
-       </main
-        <footer>
+<p>Así que, ¿qué esperas? ¡Escribe algo genial y hagamos que esta conversación sea tan divertida como un
+  <code>console.log("Hola, Mundo!");</code>! 😄</p>
+<form class="pico" name="contacto" method="POST" netlify="netlify" data-netlify-recaptcha="true">
+  <input type="hidden" name="form-name" value="contacto">
+  <fieldset>
+    <label>First name <input name="name" placeholder="Escribe tu nombre" autocomplete="given-name" required="required">
+    </label>
+    <label>Email <input type="email" name="email" placeholder="Escribe tu email" autocomplete="email" required="required">
+    </label>
+    <label>Message
+      <textarea name="message" placeholder="Escribe tu comentario" maxlength="250" required="required"></textarea>
+    </label>
+    <div data-netlify-recaptcha="true"></div>
+  </fieldset>
+  <input type="submit" value="Enviar">
+</form></main>
+      <footer>
     <p>Síguenos en:</p>
     <a href="https://www.facebook.com" target="_blank">Facebook</a>
     <p>© Duanly Vega Alderete 2024</p>
 </footer>
 
-   </article>   
-    <script type="module" src="/js/app.js"></script>
+    </article>
+    <script src="/js/app.js" type="module"></script>
   </body>
 </html>

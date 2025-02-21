@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8">
@@ -6,15 +6,12 @@
     <title>Introducción a Nunjucks (njk)</title>
     <link rel="icon" href="/img/logo.png">
     <meta name="description" content="">
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-   <article>
-       <header>
-  <nav class="container">
+    <article>
+      <header><nav class="container">
   <ul>
   <li><strong><a href="/">Duanly Corps</a></strong></li>
   </ul>
@@ -24,10 +21,8 @@
     <li><a href="/contact" class="contrast">Contacto</a></li>
   </ul>
 </nav>
-
-   </header>
-  <main class="container">
-       <h1>Introducción a Nunjucks (njk)</h1>
+</header>
+      <main class="container"><h1>Introducción a Nunjucks (njk)</h1>
 <h2>¿Qué es Nunjucks?</h2>
 <p>Nunjucks es un motor de plantillas flexible y poderoso desarrollado por Mozilla. Es similar a otros motores de plantillas como Jinja2 (Python) y Twig (PHP), y es compatible con el navegador y Node.js. Se utiliza ampliamente en el desarrollo web para generar contenido HTML dinámico, reutilizable y mantenible.</p>
 <h2>Características principales</h2>
@@ -41,29 +36,28 @@
 <p>Para utilizar Nunjucks con Eleventy, necesitas configurar tu entorno. Eleventy lo soporta de manera nativa, por lo que solo tienes que asegurarte de que los archivos <code>.njk</code> estén configurados correctamente.</p>
 <h3>Ejemplo de configuración:</h3>
 <pre><code class="language-javascript">// .eleventy.js
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: &quot;src&quot;,
       includes: &quot;_includes&quot;,
       data: &quot;_data&quot;,
-      output: &quot;dist&quot;
+      output: &quot;dist&quot;,
     },
     markdownTemplateEngine: &quot;njk&quot;,
     htmlTemplateEngine: &quot;njk&quot;,
-    templateFormats: [&quot;njk&quot;, &quot;md&quot;, &quot;html&quot;]
+    templateFormats: [&quot;njk&quot;, &quot;md&quot;, &quot;html&quot;],
   };
 };
 </code></pre>
-
-       </main
-        <footer>
+</main>
+      <footer>
     <p>Síguenos en:</p>
     <a href="https://www.facebook.com" target="_blank">Facebook</a>
     <p>© Duanly Vega Alderete 2024</p>
 </footer>
 
-   </article>   
-    <script type="module" src="/js/app.js"></script>
+    </article>
+    <script src="/js/app.js" type="module"></script>
   </body>
 </html>

@@ -1,8 +1,8 @@
 ---
-layout: base.njk
+layout: /layouts/base.njk
 title: Introducción a JavaScript
 description: Una guía introductoria al lenguaje de programación JavaScript, cubriendo sus conceptos básicos y aplicaciones fundamentales.
-tags: ["blog",javascript"]
+tags: ["blog", javascript"]
 date: 2024-10-16
 ---
 
@@ -29,3 +29,4 @@ A continuación, un ejemplo simple que muestra cómo JavaScript puede cambiar el
 
 ```javascript
 document.getElementById("demo").innerHTML = "¡Hola, Mundo!";
+```

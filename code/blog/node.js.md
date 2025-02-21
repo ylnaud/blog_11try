@@ -1,8 +1,8 @@
 ---
-layout: base.njk
+layout: layouts/base.njk
 title: Introducción a Nunjucks (njk)
 description: Una guía básica sobre Nunjucks, el motor de plantillas usado con Eleventy para generar contenido dinámico y reutilizable.
-tags: ["blog","nunjucks"]
+tags: ["blog", "nunjucks"]
 date: 2024-10-15
 ---
 
@@ -27,16 +27,17 @@ Para utilizar Nunjucks con Eleventy, necesitas configurar tu entorno. Eleventy l
 
 ```javascript
 // .eleventy.js
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
       includes: "_includes",
       data: "_data",
-      output: "dist"
+      output: "dist",
     },
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    templateFormats: ["njk", "md", "html"]
+    templateFormats: ["njk", "md", "html"],
   };
 };
+```
