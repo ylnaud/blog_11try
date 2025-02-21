@@ -4,12 +4,17 @@ title: 📬 ¡Déjame un Mensaje!
 description: contacto
 ---
 
-<h1>{{title}}</h1>
-<p>¿Te gustó lo que leíste? ¿Tienes alguna duda o simplemente quieres decir "¡Hola!"? 🤔</p>
-<p>No seas tímido, deja tu comentario abajo ⬇️. No te preocupes, ¡prometo no morder! 🐶 (Solo muerdo el código 🧑‍💻).</p>
-<p>Si te sientes muy inspirado, puedes mandarme una paloma mensajera... pero un comentario aquí abajo sería más rápido. 😉</p>
-<p>Así que, ¿qué esperas? ¡Escribe algo genial y hagamos que esta conversación sea tan divertida como un
-  <code>console.log("Hola, Mundo!");</code>! 😄</p>
+## {{ title }}
+
+¿Te gustó lo que leíste? ¿Tienes alguna duda o simplemente quieres decir "¡Hola!"? 🤔
+No seas tímido, deja tu comentario abajo ⬇️. No te preocupes, ¡prometo no morder! 🐶 (Solo muerdo el código 🧑‍💻).
+
+Si te sientes muy inspirado, puedes mandarme una paloma mensajera... pero un comentario aquí abajo sería más rápido. 😉
+
+Así que, ¿qué esperas? ¡Escribe algo genial y hagamos que esta conversación sea tan divertida como un
+
+`console.log("Hola, Mundo!");`! 😄
+
 <form class="pico" name="contacto" method="POST" netlify="netlify" data-netlify-recaptcha="true">
   <input type="hidden" name="form-name" value="contacto"/>
   <fieldset>

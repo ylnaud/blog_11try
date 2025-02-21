@@ -14,7 +14,7 @@ Pues, soy el hombre más afortunado del mundo 🌍, porque tengo un hijo increí
 
 ## 🎁 Lo más bonito que Dios me ha dado...
 
-![Thyrone Miguel](/img/foto2.jpg)
+<img src="img/foto2.jpg" alt="Thyrone Miguel" class="picture"/>
 ¡Es mi hijo! 👶 Él es el número uno en mi vida, y todo lo que hago es por y para él. Si quieres saber más sobre mis locuras o simplemente echarte unas risas, estás en el lugar correcto.
 
 ¡Gracias por visitar y espero que te quedes un rato! 🎉
