@@ -19,6 +19,12 @@
       <main class="container">{{ content | safe }}</main>
       {% include "footer.njk" %}
     </article>
-    <script type="module" src="js/index.js"></script>
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}
+    {% include "app.js" %}
+    {% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>
+      {{ js | jsmin | safe }}</script>
   </body>
 </html>

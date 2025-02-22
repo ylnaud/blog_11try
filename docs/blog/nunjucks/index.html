@@ -1,52 +1,4 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción a JavaScript y Node.js</title>
-    <link rel="icon" href="/img/logo.png">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-  </head>
-  <body>
-    <article>
-      <header><nav class="container">
-  <ul>
-  <li><strong><a href="/">Duanly Corps</a></strong></li>
-  </ul>
-  <ul>
-    <li><a href="/about" class="contrast">Acerca de mi</a></li>
-    <li><a href="/blog" class="contrast">Blog</a></li>
-    <li><a href="/contact" class="contrast">Contacto</a></li>
-  </ul>
-</nav>
-</header>
-      <main class="container"><h1>Introducción a JavaScript y Node.js</h1>
-<h2>¿Qué es JavaScript?</h2>
-<p>JavaScript es un lenguaje de programación interpretado, ligero y orientado a objetos. Es ampliamente utilizado para el desarrollo web, permitiendo la creación de contenido dinámico e interactivo en las páginas web.</p>
-<h2>Historia de JavaScript</h2>
-<p>JavaScript fue desarrollado en 1995 por Brendan Eich mientras trabajaba en Netscape Communications. Originalmente fue llamado Mocha, luego LiveScript, y finalmente renombrado a JavaScript para aprovechar el éxito de Java.</p>
-<h2>Características principales</h2>
-<ol>
-<li><strong>Interactividad</strong>: Permite que las páginas web respondan a las acciones del usuario.</li>
-<li><strong>Programación del lado del cliente</strong>: La mayoría del código JavaScript se ejecuta en el navegador web, lo que reduce la carga en los servidores web.</li>
-<li><strong>Flexibilidad</strong>: Soporta programación funcional, imperativa y basada en eventos.</li>
-<li><strong>Compatibilidad</strong>: Funciona en todos los navegadores web modernos.</li>
-</ol>
-<h2>Introducción a Node.js</h2>
-<h3>¿Qué es Node.js?</h3>
-<p>Node.js es un entorno de ejecución para JavaScript que permite ejecutar código JavaScript en el lado del servidor. Esto abre un mundo de posibilidades, permitiendo a los desarrolladores utilizar JavaScript para todo, desde el desarrollo del frontend hasta la programación del backend.</p>
-<h3>Características de Node.js</h3>
-<ol>
-<li><strong>Asincronía</strong>: Node.js utiliza un modelo de E/S no bloqueante, lo que permite manejar múltiples conexiones simultáneamente sin bloquear el hilo de ejecución principal.</li>
-<li><strong>NPM (Node Package Manager)</strong>: Node.js cuenta con un ecosistema masivo de bibliotecas y módulos que los desarrolladores pueden utilizar para acelerar su desarrollo.</li>
-<li><strong>Rendimiento</strong>: Gracias al motor V8 de Google, Node.js ofrece un rendimiento elevado para aplicaciones escalables.</li>
-<li><strong>Ecosistema unificado</strong>: Permite usar JavaScript para todo el stack de una aplicación, tanto en el frontend como en el backend.</li>
-</ol>
-<h2>Ejemplo básico con Node.js</h2>
-<p>Aquí tienes un ejemplo de un servidor HTTP básico creado con Node.js:</p>
-<pre><code class="language-javascript">const http = require(&quot;http&quot;);
+<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Introducción a JavaScript y Node.js</title><link rel="icon" href="/img/logo.png"><meta name="description" content=""><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"><style>img{display:block;width:50%;height:auto;border-bottom:0 solid #000;margin:0 auto}.form{display:block;max-height:50%;height:auto;border-bottom:0 solid #000;margin:0 auto}</style></head><body><article><header><nav class="container"><ul><li><strong><a href="/">Duanly Corps</a></strong></li></ul><ul><li><a href="/about" class="contrast">Acerca de mi</a></li><li><a href="/blog" class="contrast">Blog</a></li><li><a href="/contact" class="contrast">Contacto</a></li></ul></nav></header><main class="container"><h1>Introducción a JavaScript y Node.js</h1><h2>¿Qué es JavaScript?</h2><p>JavaScript es un lenguaje de programación interpretado, ligero y orientado a objetos. Es ampliamente utilizado para el desarrollo web, permitiendo la creación de contenido dinámico e interactivo en las páginas web.</p><h2>Historia de JavaScript</h2><p>JavaScript fue desarrollado en 1995 por Brendan Eich mientras trabajaba en Netscape Communications. Originalmente fue llamado Mocha, luego LiveScript, y finalmente renombrado a JavaScript para aprovechar el éxito de Java.</p><h2>Características principales</h2><ol><li><strong>Interactividad</strong>: Permite que las páginas web respondan a las acciones del usuario.</li><li><strong>Programación del lado del cliente</strong>: La mayoría del código JavaScript se ejecuta en el navegador web, lo que reduce la carga en los servidores web.</li><li><strong>Flexibilidad</strong>: Soporta programación funcional, imperativa y basada en eventos.</li><li><strong>Compatibilidad</strong>: Funciona en todos los navegadores web modernos.</li></ol><h2>Introducción a Node.js</h2><h3>¿Qué es Node.js?</h3><p>Node.js es un entorno de ejecución para JavaScript que permite ejecutar código JavaScript en el lado del servidor. Esto abre un mundo de posibilidades, permitiendo a los desarrolladores utilizar JavaScript para todo, desde el desarrollo del frontend hasta la programación del backend.</p><h3>Características de Node.js</h3><ol><li><strong>Asincronía</strong>: Node.js utiliza un modelo de E/S no bloqueante, lo que permite manejar múltiples conexiones simultáneamente sin bloquear el hilo de ejecución principal.</li><li><strong>NPM (Node Package Manager)</strong>: Node.js cuenta con un ecosistema masivo de bibliotecas y módulos que los desarrolladores pueden utilizar para acelerar su desarrollo.</li><li><strong>Rendimiento</strong>: Gracias al motor V8 de Google, Node.js ofrece un rendimiento elevado para aplicaciones escalables.</li><li><strong>Ecosistema unificado</strong>: Permite usar JavaScript para todo el stack de una aplicación, tanto en el frontend como en el backend.</li></ol><h2>Ejemplo básico con Node.js</h2><p>Aquí tienes un ejemplo de un servidor HTTP básico creado con Node.js:</p><pre><code class="language-javascript">const http = require(&quot;http&quot;);
 
 const server = http.createServer((req, res) =&gt; {
   res.statusCode = 200;
@@ -57,15 +9,4 @@ const server = http.createServer((req, res) =&gt; {
 server.listen(3000, &quot;127.0.0.1&quot;, () =&gt; {
   console.log(&quot;Servidor ejecutándose en http://127.0.0.1:3000/&quot;);
 });
-</code></pre>
-</main>
-      <footer>
-    <p>Síguenos en:</p>
-    <a href="https://www.facebook.com" target="_blank">Facebook</a>
-    <p>© Duanly Vega Alderete 2024</p>
-</footer>
-
-    </article>
-    <script src="/js/app.js" type="module"></script>
-  </body>
-</html>
+</code></pre></main><footer><p>Síguenos en:</p><a href="https://www.facebook.com" target="_blank">Facebook</a><p>© Duanly Vega Alderete 2024</p></footer></article><script type="module" src="js/index.js"></script></body></html>
